@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using OpenSignalsConverter.Model;
 using System.Text;
-using System.Threading.Tasks;
-using OpenSignalsConverter.Model;
 
 namespace OpenSignalsConverter
 {
     public static class FileServices
     {
         public static string ReadFileName { get; private set; }
+        public static string CurrentFilePath { get; private set; }
 
         public static void ReadFile()
         {
@@ -27,6 +24,7 @@ namespace OpenSignalsConverter
                         Console.WriteLine("ファイル名を空にすることはできません。");
                         continue;
                     }
+                    ReadFileName = fileName;
                     break;
                 }
                 catch (Exception ex)
@@ -59,7 +57,6 @@ namespace OpenSignalsConverter
             catch (Exception ex)
             {
                 Console.WriteLine("ファイルの読み込みに失敗しました。");
-                //Console.WriteLine(ex.Message);
                 throw new Exception(ex.Message);
             }
 
@@ -67,19 +64,38 @@ namespace OpenSignalsConverter
 
         public static void SaveFile()
         {
-            Console.WriteLine("\n保存するファイルの名前をつけてください（空にすると読み込んだファイル名と同じ名前で保存します）");
+            Console.WriteLine("\n保存するファイルの名前をつけてください（空にすると読み込んだファイルと同じ名前で保存します）");
             Console.Write("ファイル名：");
             string fileName = Console.ReadLine();
-            
+
             try
             {
-                if (fileName == "") fileName = ReadFileName.Remove(ReadFileName.Length - 4, 3);
+                var sb = new StringBuilder(ReadFileName);
 
-                Console.Write("\n書き出し中...");
-                using (StreamWriter sw = new StreamWriter(fileName + ".csv", true, Encoding.UTF8))
+                if (fileName == "")
+                {              
+                    fileName = sb.Replace(".txt", ".csv").ToString();
+                }
+                else
                 {
-                    sw.WriteLine($"計測日時, {WriteModel.Date}, {WriteModel.Time}");
-                    sw.WriteLine($"時間,I1,I2,O1,O2,A1,A2,A3,A4,A5,A6");
+                    if(!fileName.Contains(".csv"))
+                    {
+                        fileName = fileName + ".csv";
+                    }
+                }
+                
+                Console.WriteLine($"\n{fileName} に書き出します。");
+                Console.Write("書き出し中...");
+
+                using (StreamWriter sw = new StreamWriter(fileName, false, Encoding.UTF8))
+                {
+                    sw.WriteLine($"測定機器名, {WriteModel.DeviceName}");
+                    sw.WriteLine($"機器ID, {WriteModel.DeviceId}");
+                    sw.WriteLine($"測定日, {WriteModel.Date}");
+                    sw.WriteLine($"測定時刻, {WriteModel.Time}");
+                    sw.WriteLine($"サンプリング周波数[Hz], {WriteModel.SampleRate}");
+                    sw.WriteLine($"");
+                    sw.WriteLine($"時間[ms],I1,I2,O1,O2,A1,A2,A3,A4,A5,A6");
                     foreach(var data in WriteModel.MeasurmentData)
                     {
                         sw.WriteLine(data);
@@ -87,6 +103,7 @@ namespace OpenSignalsConverter
                 }
                 Console.WriteLine("完了");
                 Console.WriteLine("すべての作業が完了しました。");
+                Console.ReadKey();
             }
             catch (Exception ex)
             {

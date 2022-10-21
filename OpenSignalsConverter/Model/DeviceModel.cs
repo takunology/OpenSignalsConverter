@@ -6,7 +6,7 @@ namespace OpenSignalsConverter.Model
     {
         [JsonPropertyName("device")]
         public string? Name { get; set; }
-        [JsonPropertyName("device connection")]
+        [JsonPropertyName("device name")]
         public string? Id { get; set; }
         [JsonPropertyName("sampling rate")]
         public int? SampleRate { get; set; }
