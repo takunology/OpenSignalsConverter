@@ -1,0 +1,549 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "Microsoft.NETCore.Platforms/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Win32.SystemEvents/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "Microsoft.Windows.CsWinRT/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/WinRT.Host.Shim.dll": {},
+          "lib/net6.0/WinRT.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/WinRT.Host.Shim.dll": {},
+          "lib/net6.0/WinRT.Runtime.dll": {}
+        },
+        "build": {
+          "build/Microsoft.Windows.CsWinRT.props": {},
+          "build/Microsoft.Windows.CsWinRT.targets": {}
+        }
+      },
+      "ScottPlot/4.1.59": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "4.6.1",
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/net6.0/ScottPlot.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ScottPlot.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ScottPlot.WPF/4.1.59": {
+        "type": "package",
+        "dependencies": {
+          "ScottPlot": "4.1.59"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/ScottPlot.WPF.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/ScottPlot.WPF.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "System.Drawing.Common/4.6.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.Win32.SystemEvents": "4.6.0"
+        },
+        "compile": {
+          "ref/netcoreapp3.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.NETCore.Platforms/3.0.0": {
+      "sha512": "TsETIgVJb/AKoYfSP+iCxkuly5d3inZjTdx/ItZLk2CxY85v8083OBS3uai84kK3/baLnS5/b5XGs6zR7SuuHQ==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.3.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Win32.SystemEvents/4.6.0": {
+      "sha512": "Edg+pFW5C8WJb680Za2kTV8TqUi6Ahl/WldRVoOVJ23UQLpDHFspa+umgFjkWZw24ETsU99Cg+ErZz683M4chg==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Win32.SystemEvents.dll",
+        "lib/net461/Microsoft.Win32.SystemEvents.xml",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "microsoft.win32.systemevents.4.6.0.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "ref/net461/Microsoft.Win32.SystemEvents.dll",
+        "ref/net461/Microsoft.Win32.SystemEvents.xml",
+        "ref/net472/Microsoft.Win32.SystemEvents.dll",
+        "ref/net472/Microsoft.Win32.SystemEvents.xml",
+        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.xml",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Windows.CsWinRT/2.0.0": {
+      "sha512": "Z4NdAGpXQbe8bu1amMfqqwjntQy8VsTWYPhcY8KTQCLcxIKzPZm8gsJPt6qIJIJeZd8cR9ig4DQylXNfiXGbaw==",
+      "type": "package",
+      "path": "microsoft.windows.cswinrt/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NOTICE.txt",
+        "analyzers/dotnet/cs/WinRT.SourceGenerator.dll",
+        "analyzers/dotnet/cs/de-DE/CsWinRTDiagnosticStrings.resx",
+        "analyzers/dotnet/cs/es-ES/CsWinRTDiagnosticStrings.resx",
+        "analyzers/dotnet/cs/fr-FR/CsWinRTDiagnosticStrings.resx",
+        "analyzers/dotnet/cs/it-IT/CsWinRTDiagnosticStrings.resx",
+        "analyzers/dotnet/cs/ja-JP/CsWinRTDiagnosticStrings.resx",
+        "analyzers/dotnet/cs/ko-KR/CsWinRTDiagnosticStrings.resx",
+        "analyzers/dotnet/cs/pt-BR/CsWinRTDiagnosticStrings.resx",
+        "analyzers/dotnet/cs/ru-RU/CsWinRTDiagnosticStrings.resx",
+        "analyzers/dotnet/cs/zh-CN/CsWinRTDiagnosticStrings.resx",
+        "analyzers/dotnet/cs/zh-TW/CsWinRTDiagnosticStrings.resx",
+        "build/Microsoft.Windows.CsWinRT.Authoring.Transitive.targets",
+        "build/Microsoft.Windows.CsWinRT.Authoring.targets",
+        "build/Microsoft.Windows.CsWinRT.Embedded.targets",
+        "build/Microsoft.Windows.CsWinRT.IIDOptimizer.targets",
+        "build/Microsoft.Windows.CsWinRT.props",
+        "build/Microsoft.Windows.CsWinRT.targets",
+        "build/tools/IIDOptimizer/IIDOptimizer.deps.json",
+        "build/tools/IIDOptimizer/IIDOptimizer.dll",
+        "build/tools/IIDOptimizer/IIDOptimizer.exe",
+        "build/tools/IIDOptimizer/IIDOptimizer.runtimeconfig.json",
+        "build/tools/IIDOptimizer/Mono.Cecil.Mdb.dll",
+        "build/tools/IIDOptimizer/Mono.Cecil.Pdb.dll",
+        "build/tools/IIDOptimizer/Mono.Cecil.Rocks.dll",
+        "build/tools/IIDOptimizer/Mono.Cecil.dll",
+        "build/tools/IIDOptimizer/System.CommandLine.dll",
+        "cswinrt.exe",
+        "embedded/any/AgileReference.cs",
+        "embedded/any/Attributes.cs",
+        "embedded/any/CastExtensions.cs",
+        "embedded/any/ComWrappersSupport.cs",
+        "embedded/any/Context.cs",
+        "embedded/any/DataErrorsChangedEventArgs.cs",
+        "embedded/any/DerivedComposed.cs",
+        "embedded/any/EventHandler.cs",
+        "embedded/any/EventRegistrationToken.cs",
+        "embedded/any/ExceptionErrorInfo.cs",
+        "embedded/any/ExceptionHelpers.cs",
+        "embedded/any/FundamentalMarshalers.cs",
+        "embedded/any/Geometry.cs",
+        "embedded/any/GuidGenerator.cs",
+        "embedded/any/IActivationFactory.cs",
+        "embedded/any/IContextCallback.cs",
+        "embedded/any/IInspectable.cs",
+        "embedded/any/IMarshal.cs",
+        "embedded/any/IReferenceTracker.cs",
+        "embedded/any/IStringable.cs",
+        "embedded/any/IUnknownVftbl.cs",
+        "embedded/any/KeyValuePair.cs",
+        "embedded/any/Marshalers.cs",
+        "embedded/any/Module.cs",
+        "embedded/any/MonoSupport.cs",
+        "embedded/any/NotifyCollectionChangedAction.cs",
+        "embedded/any/NotifyCollectionChangedEventArgs.cs",
+        "embedded/any/NotifyCollectionChangedEventHandler.cs",
+        "embedded/any/Nullable.cs",
+        "embedded/any/Numerics.cs",
+        "embedded/any/ObjectReference.cs",
+        "embedded/any/Projections.cs",
+        "embedded/any/PropertyChangedEventArgs.cs",
+        "embedded/any/PropertyChangedEventHandler.cs",
+        "embedded/any/StandardDelegates.cs",
+        "embedded/any/SystemTypes.cs",
+        "embedded/any/Type.cs",
+        "embedded/any/TypeExtensions.cs",
+        "embedded/any/TypeNameSupport.cs",
+        "embedded/any/Uri.cs",
+        "embedded/any/WinRTRuntimeErrorStrings.Designer.cs",
+        "embedded/net6.0/Bindable.net5.cs",
+        "embedded/net6.0/CollectionHybrid.net5.cs",
+        "embedded/net6.0/ComWrappersSupport.net5.cs",
+        "embedded/net6.0/IAgileReference.net5.cs",
+        "embedded/net6.0/ICommand.net5.cs",
+        "embedded/net6.0/ICustomPropertyProvider.net5.cs",
+        "embedded/net6.0/IDictionary.net5.cs",
+        "embedded/net6.0/IDisposable.net5.cs",
+        "embedded/net6.0/IEnumerable.net5.cs",
+        "embedded/net6.0/IInspectable.net5.cs",
+        "embedded/net6.0/IList.net5.cs",
+        "embedded/net6.0/INotifyCollectionChanged.net5.cs",
+        "embedded/net6.0/INotifyDataErrorInfo.net5.cs",
+        "embedded/net6.0/INotifyPropertyChanged.net5.cs",
+        "embedded/net6.0/IPropertyValue.net5.cs",
+        "embedded/net6.0/IReadOnlyDictionary.net5.cs",
+        "embedded/net6.0/IReadOnlyList.net5.cs",
+        "embedded/net6.0/IReferenceArray.net5.cs",
+        "embedded/net6.0/IServiceProvider.net5.cs",
+        "embedded/net6.0/IWeakReferenceSource.net5.cs",
+        "embedded/net6.0/IWinRTObject.net5.cs",
+        "embedded/net6.0/SingleInterfaceOptimizedObject.net5.cs",
+        "embedded/netstandard2.0/Bindable.netstandard2.0.cs",
+        "embedded/netstandard2.0/ComWrappersSupport.netstandard2.0.cs",
+        "embedded/netstandard2.0/IAgileReference.netstandard2.0.cs",
+        "embedded/netstandard2.0/ICommand.netstandard2.0.cs",
+        "embedded/netstandard2.0/ICustomPropertyProvider.netstandard2.0.cs",
+        "embedded/netstandard2.0/IDictionary.netstandard2.0.cs",
+        "embedded/netstandard2.0/IDisposable.netstandard2.0.cs",
+        "embedded/netstandard2.0/IEnumerable.netstandard2.0.cs",
+        "embedded/netstandard2.0/IList.netstandard2.0.cs",
+        "embedded/netstandard2.0/INotifyCollectionChanged.netstandard2.0.cs",
+        "embedded/netstandard2.0/INotifyDataErrorInfo.netstandard2.0.cs",
+        "embedded/netstandard2.0/INotifyPropertyChanged.netstandard2.0.cs",
+        "embedded/netstandard2.0/IPropertyValue.netstandard2.0.cs",
+        "embedded/netstandard2.0/IReadOnlyDictionary.netstandard2.0.cs",
+        "embedded/netstandard2.0/IReadOnlyList.netstandard2.0.cs",
+        "embedded/netstandard2.0/IReferenceArray.netstandard2.0.cs",
+        "embedded/netstandard2.0/IServiceProvider.netstandard2.0.cs",
+        "embedded/netstandard2.0/IWeakReferenceSource.netstandard2.0.cs",
+        "embedded/netstandard2.0/WeakReference.netstandard2.0.cs",
+        "hosting/arm64/native/WinRT.Host.dll",
+        "hosting/arm64/native/de-DE/WinRT.Host.dll.mui",
+        "hosting/arm64/native/en-US/WinRT.Host.dll.mui",
+        "hosting/arm64/native/es-ES/WinRT.Host.dll.mui",
+        "hosting/arm64/native/fr-FR/WinRT.Host.dll.mui",
+        "hosting/arm64/native/it-IT/WinRT.Host.dll.mui",
+        "hosting/arm64/native/ja-JP/WinRT.Host.dll.mui",
+        "hosting/arm64/native/ko-KR/WinRT.Host.dll.mui",
+        "hosting/arm64/native/pt-BR/WinRT.Host.dll.mui",
+        "hosting/arm64/native/ru-RU/WinRT.Host.dll.mui",
+        "hosting/arm64/native/zh-CN/WinRT.Host.dll.mui",
+        "hosting/arm64/native/zh-TW/WinRT.Host.dll.mui",
+        "hosting/x64/native/WinRT.Host.dll",
+        "hosting/x64/native/de-DE/WinRT.Host.dll.mui",
+        "hosting/x64/native/en-US/WinRT.Host.dll.mui",
+        "hosting/x64/native/es-ES/WinRT.Host.dll.mui",
+        "hosting/x64/native/fr-FR/WinRT.Host.dll.mui",
+        "hosting/x64/native/it-IT/WinRT.Host.dll.mui",
+        "hosting/x64/native/ja-JP/WinRT.Host.dll.mui",
+        "hosting/x64/native/ko-KR/WinRT.Host.dll.mui",
+        "hosting/x64/native/pt-BR/WinRT.Host.dll.mui",
+        "hosting/x64/native/ru-RU/WinRT.Host.dll.mui",
+        "hosting/x64/native/zh-CN/WinRT.Host.dll.mui",
+        "hosting/x64/native/zh-TW/WinRT.Host.dll.mui",
+        "hosting/x86/native/WinRT.Host.dll",
+        "hosting/x86/native/de-DE/WinRT.Host.dll.mui",
+        "hosting/x86/native/en-US/WinRT.Host.dll.mui",
+        "hosting/x86/native/es-ES/WinRT.Host.dll.mui",
+        "hosting/x86/native/fr-FR/WinRT.Host.dll.mui",
+        "hosting/x86/native/it-IT/WinRT.Host.dll.mui",
+        "hosting/x86/native/ja-JP/WinRT.Host.dll.mui",
+        "hosting/x86/native/ko-KR/WinRT.Host.dll.mui",
+        "hosting/x86/native/pt-BR/WinRT.Host.dll.mui",
+        "hosting/x86/native/ru-RU/WinRT.Host.dll.mui",
+        "hosting/x86/native/zh-CN/WinRT.Host.dll.mui",
+        "hosting/x86/native/zh-TW/WinRT.Host.dll.mui",
+        "lib/net6.0/WinRT.Host.Shim.dll",
+        "lib/net6.0/WinRT.Runtime.dll",
+        "lib/net6.0/de-DE/WinRTRuntimeErrorStrings.resx",
+        "lib/net6.0/es-ES/WinRTRuntimeErrorStrings.resx",
+        "lib/net6.0/fr-FR/WinRTRuntimeErrorStrings.resx",
+        "lib/net6.0/it-IT/WinRTRuntimeErrorStrings.resx",
+        "lib/net6.0/ja-JP/WinRTRuntimeErrorStrings.resx",
+        "lib/net6.0/ko-KR/WinRTRuntimeErrorStrings.resx",
+        "lib/net6.0/pt-BR/WinRTRuntimeErrorStrings.resx",
+        "lib/net6.0/ru-RU/WinRTRuntimeErrorStrings.resx",
+        "lib/net6.0/zh-CN/WinRTRuntimeErrorStrings.resx",
+        "lib/net6.0/zh-TW/WinRTRuntimeErrorStrings.resx",
+        "metadata/WinRT.Interop.winmd",
+        "microsoft.windows.cswinrt.2.0.0.nupkg.sha512",
+        "microsoft.windows.cswinrt.nuspec",
+        "readme.txt"
+      ]
+    },
+    "ScottPlot/4.1.59": {
+      "sha512": "zUEBIW6rN6T6SoG8JGK4EGiwc94wX4iz1PFEGyAqRjGlnwwvHCCNdVWcNoQ/3u0rm8SJQQMD+AgT/2aoJUHLGQ==",
+      "type": "package",
+      "path": "scottplot/4.1.59",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.ico",
+        "icon.png",
+        "lib/net462/ScottPlot.dll",
+        "lib/net462/ScottPlot.xml",
+        "lib/net6.0/ScottPlot.dll",
+        "lib/net6.0/ScottPlot.xml",
+        "lib/netstandard2.0/ScottPlot.dll",
+        "lib/netstandard2.0/ScottPlot.xml",
+        "scottplot.4.1.59.nupkg.sha512",
+        "scottplot.nuspec"
+      ]
+    },
+    "ScottPlot.WPF/4.1.59": {
+      "sha512": "ifK/JWrWbdUGmkoWxbIhqfkp0/cdOQ5jvOrK2zOYeebyaOsxfEwunbI3pnkgwk1cA+FQ8oHV/o7QdEJtJRE6UA==",
+      "type": "package",
+      "path": "scottplot.wpf/4.1.59",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.ico",
+        "icon.png",
+        "lib/net461/ScottPlot.WPF.dll",
+        "lib/net472/ScottPlot.WPF.dll",
+        "lib/net48/ScottPlot.WPF.dll",
+        "lib/net5.0-windows7.0/ScottPlot.WPF.dll",
+        "lib/net6.0-windows7.0/ScottPlot.WPF.dll",
+        "lib/netcoreapp3.1/ScottPlot.WPF.dll",
+        "scottplot.wpf.4.1.59.nupkg.sha512",
+        "scottplot.wpf.nuspec",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "System.Drawing.Common/4.6.1": {
+      "sha512": "TFAADvBEUhdDb2Lteq/BUeG0J1y7a0GyFdpB8yE/eAcbiN0R5MII1nXExXsrtRZiO8C/L9SozL2wGqkRlhiv6A==",
+      "type": "package",
+      "path": "system.drawing.common/4.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.xml",
+        "ref/netstandard2.0/System.Drawing.Common.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "system.drawing.common.4.6.1.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "Microsoft.Windows.CsWinRT >= 2.0.0",
+      "ScottPlot.WPF >= 4.1.59"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\生物物理研究室\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\生物物理研究室\\Documents\\GitHub\\OpenSignalsConverter\\OpenSignalConverterDesktop\\OpenSignalConverterDesktop.csproj",
+      "projectName": "OpenSignalConverterDesktop",
+      "projectPath": "C:\\Users\\生物物理研究室\\Documents\\GitHub\\OpenSignalsConverter\\OpenSignalConverterDesktop\\OpenSignalConverterDesktop.csproj",
+      "packagesPath": "C:\\Users\\生物物理研究室\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\生物物理研究室\\Documents\\GitHub\\OpenSignalsConverter\\OpenSignalConverterDesktop\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\生物物理研究室\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows7.0",
+        "dependencies": {
+          "Microsoft.Windows.CsWinRT": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
+          "ScottPlot.WPF": {
+            "target": "Package",
+            "version": "[4.1.59, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "2tzQ06iw5xb9KtOUd5IDsRX4w9emfIKyVOOVzuXa8NmI8GddOgZn+Qcx8TcFTsaYyTmm84I7leoM/SQmdh8a8g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\生物物理研究室\\Documents\\GitHub\\OpenSignalsConverter\\OpenSignalConverterDesktop\\OpenSignalConverterDesktop.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\生物物理研究室\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
+    "C:\\Users\\生物物理研究室\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
+    "C:\\Users\\生物物理研究室\\.nuget\\packages\\microsoft.windows.cswinrt\\2.0.0\\microsoft.windows.cswinrt.2.0.0.nupkg.sha512",
+    "C:\\Users\\生物物理研究室\\.nuget\\packages\\scottplot\\4.1.59\\scottplot.4.1.59.nupkg.sha512",
+    "C:\\Users\\生物物理研究室\\.nuget\\packages\\scottplot.wpf\\4.1.59\\scottplot.wpf.4.1.59.nupkg.sha512",
+    "C:\\Users\\生物物理研究室\\.nuget\\packages\\system.drawing.common\\4.6.1\\system.drawing.common.4.6.1.nupkg.sha512",
+    "C:\\Users\\生物物理研究室\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

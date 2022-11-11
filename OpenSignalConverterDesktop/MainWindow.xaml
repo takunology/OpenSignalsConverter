@@ -1,0 +1,38 @@
+﻿<Window x:Class="OpenSignalConverterDesktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:plot="clr-namespace:ScottPlot;assembly=ScottPlot"
+        xmlns:local="clr-namespace:OpenSignalConverterDesktop"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <StackPanel Orientation="Horizontal" Margin="10 5">
+                <Button Content="ファイルを開く" Padding="5 0" Margin="0 0 5 0" Click="OpenButton"/>
+                <Button Content="ファイルを保存する" Padding="5 0" Margin="0 0 5 0" Click="SaveButton"/>
+                <Label Content="ファイルパス" x:Name="_filePath"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <WpfPlot x:Name="_plotArea" Margin="5"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="準備完了" Margin="5 0" x:Name="_status"/>
+                <ProgressBar Width="200" Height="20" Margin="5 0" Value="{Binding StatusValue, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
+            </StackPanel>
+            
+        </Grid>
+    </Grid>
+</Window>

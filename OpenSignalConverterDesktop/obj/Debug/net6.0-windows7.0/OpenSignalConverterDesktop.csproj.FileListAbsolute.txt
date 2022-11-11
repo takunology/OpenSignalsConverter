@@ -1,0 +1,6 @@
+C:\Users\生物物理研究室\Documents\GitHub\OpenSignalsConverter\OpenSignalConverterDesktop\obj\Debug\net6.0-windows7.0\OpenSignalConverterDesktop.csproj.AssemblyReference.cache
+C:\Users\生物物理研究室\Documents\GitHub\OpenSignalsConverter\OpenSignalConverterDesktop\obj\Debug\net6.0-windows7.0\MainWindow.g.cs
+C:\Users\生物物理研究室\Documents\GitHub\OpenSignalsConverter\OpenSignalConverterDesktop\obj\Debug\net6.0-windows7.0\App.g.cs
+C:\Users\生物物理研究室\Documents\GitHub\OpenSignalsConverter\OpenSignalConverterDesktop\obj\Debug\net6.0-windows7.0\GeneratedInternalTypeHelper.g.cs
+C:\Users\生物物理研究室\Documents\GitHub\OpenSignalsConverter\OpenSignalConverterDesktop\obj\Debug\net6.0-windows7.0\OpenSignalConverterDesktop_MarkupCompile.cache
+C:\Users\生物物理研究室\Documents\GitHub\OpenSignalsConverter\OpenSignalConverterDesktop\obj\Debug\net6.0-windows7.0\OpenSignalConverterDesktop_MarkupCompile.lref

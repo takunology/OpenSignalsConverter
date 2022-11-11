@@ -1,0 +1,7 @@
+-target net6.0
+-input 10.0.19041.0
+-input 
+-output "C:\Users\生物物理研究室\Documents\GitHub\OpenSignalsConverter\OpenSignalConverterDesktop\obj\Debug\net6.0-windows10.0.19041.0\Generated Files"
+
+-exclude Windows
+-exclude Microsoft
